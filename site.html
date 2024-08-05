@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo - Terapia Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Paulo - Terapia Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introducao">Início</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#publicacoes">Publicações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="introducao" class="intro">
+        <div class="container">
+            <h2>Bem-vindo</h2>
+            <p>Sou Paulo, terapeuta especializado em ACP, oferecendo terapia online para ajudar você a alcançar o equilíbrio emocional e mental.</p>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 1">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 2">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 3">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="publicacoes" class="publicacoes">
+        <div class="container">
+            <h2>Publicações</h2>
+            <div class="post">
+                <h3>Ansiedade</h3>
+                <p>A ansiedade é uma resposta natural ao estresse, mas quando se torna crônica, pode afetar significativamente a qualidade de vida. Descubra estratégias para gerenciar a ansiedade.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <div class="post">
+                <h3>Atendimento Terapêutico</h3>
+                <p>O atendimento terapêutico oferece um espaço seguro para explorar emoções e desafios com um profissional. Saiba mais sobre os benefícios da terapia.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <div class="post">
+                <h3>Terapia Online</h3>
+                <p>A terapia online oferece flexibilidade e acessibilidade. Explore como essa modalidade pode ser uma alternativa eficaz ao atendimento presencial.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Paulo - Terapia Online. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+    background: #f4f4f4;
+}
+
+.intro {
+    background: #e2e2e2;
+    text-align: center;
+}
+
+.galeria {
+    background: #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Publicações */
+.publicacoes .post {
+    margin-bottom: 20px;
+}
+
+.publicacoes .post h3 {
+    margin: 0;
+}
+
+.publicacoes .post a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.publicacoes .post a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Rodapé */
+footer {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    text-decoration: underline;
+}
+
+// JavaScript para validação de formulário ou outras interações
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Formulário enviado com sucesso!');
+});
